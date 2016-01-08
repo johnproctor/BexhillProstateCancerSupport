@@ -1,0 +1,12 @@
+_ReSharper.*
+bin/
+obj/
+packages/*/
+*TeamCity*
+*.suo
+*.swp
+*.user
+sln.DottSettings
+sln.DottSettings.User
+*.ncrunchsolution
+*.ncrunchproject
