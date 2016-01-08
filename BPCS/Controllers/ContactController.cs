@@ -19,6 +19,7 @@ namespace BPCS.Controllers
             return View();
         }
 
+        [HttpPost]
         public ActionResult Index(ContactModel model)
         {
             var grid = new Client(ConfigurationManager.AppSettings["SendGridConnection"]);

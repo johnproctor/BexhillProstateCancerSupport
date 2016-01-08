@@ -14,7 +14,7 @@
 </p>
 
 @using (Html.BeginForm())
-
+{
     @Html.LabelFor(x => x.Name)
     @Html.TextBoxFor(x => x.Name)
 
@@ -24,4 +24,6 @@
     @Html.LabelFor(x => x.Message)
     @Html.TextAreaFor(x => x.Message)
 
-    )
+    <input type="submit" />
+}
+    
