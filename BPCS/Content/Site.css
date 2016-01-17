@@ -4,6 +4,7 @@
 
 header {
     background-color:#737171;
+    height:50px;
     color: #fff;
 }
 
@@ -51,21 +52,18 @@ article {
         height: 500px;
         background: url(http://placehold.it/1500x500) no-repeat center center fixed; 
         background-size: cover;
-        margin-top: -10px;
     }
 
     .contact-banner-image {
         height: 250px;
         background: url(http://placehold.it/1500x250) no-repeat center center fixed; 
         background-size: cover;
-        margin-top: -10px;
     }
 
     .links-banner-image {
         height: 250px;
         background: url(http://placehold.it/1500x250) no-repeat center center fixed; 
         background-size: cover;
-        margin-top: -10px;
     }
 }
 
@@ -88,4 +86,58 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#main-navigation {
+    font-size:20pt;
+    height:50px;
+    background-color:black;
+}
+
+#main-navigation ul {
+    list-style:none;
+    margin:0px;
+    float:right;
+}
+
+#main-navigation ul li a {
+    text-decoration:none;
+    color:#ffffff;
+        height: 70px;
+}
+
+#main-navigation ul li {
+    display:inline-block;
+    float: Left;
+    padding: 5px 10px;
+    color:#ffffff;
+}
+
+#main-navigation ul li:hover {
+    background-color:#383535;
+    height:50px;
+    padding: 5px 10px;    
+}
+
+#main-navigation ul li:visited {
+    background-color:#383535;
+    /*height:50px;*/
+    padding: 5px 10px;
+    color:#ffffff;    
+}
+
+#main-navigation ul li a:active {
+    color:blue;    
+}
+
+#main-home-article {
+}
+
+article #main-home-section {
+    width:75%;
+    margin: auto;
+}
+
+label {
+    margin-right: 10px;
 }
