@@ -12,6 +12,7 @@ h1 {
     font-weight: bold;
     font-size: 4em;
     padding-top: 0.5em;
+    margin:auto;
 }
 
 h2 {
@@ -144,6 +145,7 @@ article #main-home-section {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 
