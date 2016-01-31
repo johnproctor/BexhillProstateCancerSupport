@@ -2,31 +2,34 @@
 @{
     ViewBag.Title = "Contact Bexhill Prostate Cancer Support - Contact us";
 }
-
 <div class="contact-banner-image"></div>
-
 <article>
+    <h1>Contact</h1>
+    <p>
+        To send an enquiry or message please use the form below completing your name, email address and message.
+    </p>
+    @using (Html.BeginForm())
+    {
+        <div class="infoForm">
+            <div class="inputLabel">
+                @Html.LabelFor(x => x.Name)
+                @Html.TextBoxFor(x => x.Name)
+            </div>
+            <div class="inputLabel">
+                @Html.LabelFor(x => x.EmailAddress)
+                @Html.TextBoxFor(x => x.EmailAddress)
+            </div>
+            <div class="inputTextbox">
+                @Html.LabelFor(x => x.Message)
+                @Html.TextAreaFor(x => x.Message, htmlAttributes: new { rows = 4, cols = 62 })
+            </div>
+            <div class="btn">
+                <div class="btn-group">
+                    <input type="submit" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
 
-<h1>Contact</h1>
-
-<p>
-    To send an enquiry or message please use the form below completing your name, email address and message.
-</p>
-
-@using (Html.BeginForm())
-{
-    @Html.LabelFor(x => x.Name)
-    @Html.TextBoxFor(x => x.Name)
-
-    @Html.LabelFor(x => x.EmailAddress)
-    @Html.TextBoxFor(x => x.EmailAddress)
-
-    @Html.LabelFor(x => x.Message)
-    @Html.TextAreaFor(x => x.Message)
-
-    <div class="btn-group">
-        <input type="submit" class="btn btn-default"/>
-    </div>
-}
+    }
 
 </article>
