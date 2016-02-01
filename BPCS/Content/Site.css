@@ -49,8 +49,8 @@ article {
 
 @media (min-width: 600px) {
     .large-banner-image {
-        height: 500px;
-        background: url(http://placehold.it/1500x500) no-repeat center center fixed; 
+        min-height: 400px;
+        background: url('/Images/image-1500x400_higher.jpg') no-repeat center center fixed; 
         background-size: cover;
     }
 
@@ -67,6 +67,26 @@ article {
     }
 }
 
+
+@media (min-width: 800px) {
+    .large-banner-image {
+        min-height: 600px;
+        background: url('/Images/image-1500x400_higher.jpg') no-repeat center center fixed; 
+        background-size: cover;
+    }
+
+    .contact-banner-image {
+        height: 250px;
+        background: url(http://placehold.it/1500x250) no-repeat center center fixed; 
+        background-size: cover;
+    }
+
+    .links-banner-image {
+        height: 250px;
+        background: url(http://placehold.it/1500x250) no-repeat center center fixed; 
+        background-size: cover;
+    }
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
