@@ -190,8 +190,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\contact_us_1400x250 %281%29.jpg" />
+    <Content Include="Images\contact_us_1400x250.jpg" />
     <Content Include="Images\image-1500x400.jpg" />
     <Content Include="Images\image-1500x400_higher.jpg" />
+    <Content Include="Images\www_1400x250.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
