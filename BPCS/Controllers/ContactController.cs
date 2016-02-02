@@ -27,7 +27,7 @@ namespace BPCS.Controllers
             message.From = new MailAddress(model.EmailAddress);
             message.AddTo(ConfigurationManager.AppSettings["EmailTo"]);
             message.Text = model.Message;
-            message.Subject = String.Format("Website email from {0} {1} {2}", model.Name, Environment.NewLine, model.Message);
+            message.Subject = String.Format("Website email from {0} ", model.Name);
 
             var credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUsername"], ConfigurationManager.AppSettings["EmailPassword"]);
             // Create an Web transport for sending email.
