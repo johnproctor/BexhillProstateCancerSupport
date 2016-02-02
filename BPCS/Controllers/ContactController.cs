@@ -33,7 +33,7 @@ namespace BPCS.Controllers
             // Create an Web transport for sending email.
             var transportWeb = new Web(credentials);
 
-            transportWeb.DeliverAsync(message).Wait();
+            transportWeb.DeliverAsync(message);
 
             return View("ThankYou");
         }
