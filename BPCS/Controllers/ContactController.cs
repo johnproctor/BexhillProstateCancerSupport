@@ -22,7 +22,6 @@ namespace BPCS.Controllers
         [HttpPost]
         public ActionResult Index(ContactModel model)
         {
-            var grid = new Client(ConfigurationManager.AppSettings["SendGridConnection"]);
 
             var message = new SendGridMessage();
             message.From = new MailAddress(model.EmailAddress);
@@ -30,7 +29,10 @@ namespace BPCS.Controllers
             message.Text = model.Message;
             message.Subject = String.Format("Website email from {0}", model.Name);
 
-            var transportWeb = new Web(ConfigurationManager.AppSettings["SendGridAPIKey"]);
+            var credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUsername"], ConfigurationManager.AppSettings["EmailPassword"]);
+            // Create an Web transport for sending email.
+            var transportWeb = new Web(credentials);
+
             transportWeb.DeliverAsync(message).Wait();
 
             return View();
