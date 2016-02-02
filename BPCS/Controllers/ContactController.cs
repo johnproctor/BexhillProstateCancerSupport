@@ -35,7 +35,7 @@ namespace BPCS.Controllers
 
             transportWeb.DeliverAsync(message).Wait();
 
-            return View();
+            return View("ThankYou");
         }
     }
 }
